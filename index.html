@@ -5,6 +5,41 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Consulta CEP</title>
+    <style>
+
+        html {
+            height: 100%;
+        }
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-family: sans-serif;
+            height: 100%;
+        }
+
+        form {
+            width: 480px;
+            padding: 20px;
+            background-color: #F0F0F0;
+            border: 1px solid #CCC;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 10px;
+        }
+
+        label span{
+            display: block;
+        }
+
+        label input {
+            width: 100%;
+            padding: 5px;
+            border: 1px solid #666;
+        }
+    </style>
 </head>
 <body>
     <form>
@@ -24,6 +59,10 @@
             <span>Estado:</span>
             <input disabled type="text" name="estado" id="estado">
         </label>
+        <div class="controles">
+            <button>Cancelar</button>
+            <button>Enviar</button>
+        </div>
     </form>
 </body>
 </html>
